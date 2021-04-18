@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --clr-black: #0a0a30;
+    --clr-black-75: hsl(240, 65%, 11%, 0.75);
+
+    --clr-primary-50: #f8ffeb;
+    --clr-primary-100: #ebffcc;
+    --clr-primary-200: #d6ff99;
+    --clr-primary-300: #c2ff66;
+    --clr-primary-400: #adff33;
+    --clr-primary: #99ff00;
+    --clr-primary-600: #7acc00;
+    --clr-primary-700: #5c9900;
+    --clr-primary-800: #3d6600;
+    --clr-primary-900: #1f3300;
+
+    --clr-secondary-100: #d2f0db;
+    --clr-secondary-200: #a4e0b7;
+    --clr-secondary-300: #77d192;
+    --clr-secondary-400: #49c16e;
+    --clr-secondary: #1cb24a;
+    --clr-secondary-600: #168e3b;
+    --clr-secondary-700: #116b2c;
+    --clr-secondary-800: #0b471e;
+    --clr-secondary-900: #06240f;
+}
