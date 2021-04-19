@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 :root {
-    --clr-black: #0a0a30;
-    --clr-black-75: hsl(240, 65%, 11%, 0.75);
+    --clr-black: hsl(203, 79%, 17%);
+    --clr-black-75: hsl(203, 79%, 17%, 0.75);
 
     --clr-primary-50: #f8ffeb;
     --clr-primary-100: #ebffcc;
@@ -26,4 +26,15 @@
     --clr-secondary-700: #116b2c;
     --clr-secondary-800: #0b471e;
     --clr-secondary-900: #06240f;
+}
+
+.heading-deco::after {
+    content: '';
+    display: block;
+    height: 2rem;
+    width: 100%;
+    background: url(/src/assets/deco.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-bottom: 2rem;
 }
