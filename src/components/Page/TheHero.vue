@@ -1,24 +1,26 @@
 <template>
-	<header class="header relative bg flex overflow-x">
+	<header class="header bg flex overflow-x">
 		<div
 			class="header-box container mx-auto px-4 sm:px-0 flex flex-col relative lg:flex-row lg:items-center md:justify-between"
 		>
 			<div
-				class="relative flex flex-col items-center text-white text-center w-full z-20 lg:text-left lg:items-start"
+				class="flex flex-col items-center text-white text-center w-full lg:text-left lg:items-start"
 			>
 				<p
-					class="mb-4 font-text text-sm max-w-prose uppercase tracking-widest"
+					class="text-line mb-8 font-text text-primary text-sm max-w-prose uppercase tracking-widest"
 				>
 					Stowarzyszenie dla ludzi
 				</p>
 				<h1
-					class="font-primary font-bold text-4xl leading-snug sm:text-5xl lg:text-6xl xl:text-7xl"
+					class="hero-headline font-primary font-bold text-4xl leading-snug sm:text-5xl lg:text-6xl xl:text-7xl"
 				>
 					Realizujemy wyłącznie
-					<span class="block mt-4 mb-8">dobre dzieła!</span>
+					<span class="block mt-4 mb-24 text-underline"
+						>dobre dzieła!</span
+					>
 				</h1>
 				<button
-					class="button px-12 py-4 bg-primary text-black text-xl font-primary font-medium hover:bg-secondary hover:text-white"
+					class="button px-12 py-4 bg-primary-600 text-white text-xl font-primary font-medium hover:bg-primary-200 hover:text-primary-800"
 				>
 					Poznaj nas teraz!
 				</button>
@@ -29,11 +31,11 @@
 			/>
 		</div>
 		<div
-			class="w-full h-full z-10 absolute pointer-events-none overflow-hidden"
+			class="w-full h-full z-0 absolute pointer-events-none overflow-hidden"
 		>
 			<img
 				src="../../assets/check-outline.svg"
-				class="check-outline absolute bottom-32 left-1/2 transform -translate-x-1/2 lg:transform-none opacity-40 lg:-bottom-12"
+				class="check-outline absolute bottom-32 left-1/2 transform -translate-x-1/2 lg:transform-none opacity-80 lg:-bottom-12"
 			/>
 		</div>
 	</header>
@@ -42,34 +44,10 @@
 <script>
 </script>
 
-<style scoped>
-	.bg {
-		background-image: url(../../assets/bg.jpg);
-		background-repeat: no-repeat;
-		background-size: cover;
-	}
-
+<style>
 	.header {
 		min-height: 640px;
 		height: 100vh;
-	}
-
-	.header::before {
-		content: '';
-		display: block;
-		width: 100%;
-		height: 100%;
-		position: absolute;
-		bottom: 0;
-		left: 0;
-		z-index: 0;
-		background-image: linear-gradient(
-				to bottom,
-				var(--clr-black) 33%,
-				var(--clr-black-75)
-			),
-			url(../../assets/check-fill.svg);
-		background-size: 16px;
 	}
 
 	.check-outline {
