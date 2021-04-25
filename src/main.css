@@ -18,7 +18,7 @@
 }
 
 h2 {
-	@apply block font-primary font-bold text-3xl lg:text-5xl xl:text-6xl;
+	@apply block font-primary font-bold text-4xl lg:text-5xl xl:text-6xl;
 }
 
 h2.decorated {

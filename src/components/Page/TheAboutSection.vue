@@ -1,11 +1,13 @@
 <template>
 	<section
-		class="container mx-auto pt-32 text-black grid grid-cols-8 gap-x-8"
+		class="container mx-auto pt-32 px-8 text-black grid grid-cols-8 gap-x-8"
 	>
-		<h2 class="decorated sticky top-16 col-span-3 self-start">
+		<h2
+			class="decorated col-span-full self-start mb-5 2xl:mb-0 2xl:col-span-3 2xl:sticky 2xl:top-16"
+		>
 			Poznaj stowarzyszenie
 		</h2>
-		<div class="col-span-5">
+		<div class="col-span-full lg:col-span-5">
 			<h3>Dlaczego istniejemy?</h3>
 			<p class="opacity-80">
 				Lorem ipsum dolor sit, amet consectetur adipisicing elit.
@@ -34,11 +36,11 @@
 			</p>
 		</div>
 	</section>
-	<section class="bg mt-32 bg-black">
-		<div class="container mx-auto py-48 text-white">
-			<h2 class="mb-36">Nasze wartości</h2>
+	<section class="bg mt-16 lg:mt-32 bg-black">
+		<div class="container mx-auto px-8 py-16 lg:py-48 text-white">
+			<h2 class="mb-12 lg:mb-36">Nasze wartości</h2>
 			<div class="grid grid-cols-3 gap-16">
-				<div class="value mx-auto">
+				<div class="value mx-auto col-span-full lg:col-span-1">
 					<h3 class="text-underline">Nasza siła to nasza wiara</h3>
 					<p class="mt-12 opacity-80">
 						Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -46,7 +48,7 @@
 						voluptate.
 					</p>
 				</div>
-				<div class="value mx-auto">
+				<div class="value mx-auto col-span-full lg:col-span-1">
 					<h3 class="text-underline">
 						Pomaganie w dążeniu do wolności
 					</h3>
@@ -56,7 +58,7 @@
 						voluptate.
 					</p>
 				</div>
-				<div class="value mx-auto">
+				<div class="value mx-auto col-span-full lg:col-span-1">
 					<h3 class="text-underline">Człowiek jest ważny</h3>
 					<p class="mt-12 opacity-80">
 						Lorem ipsum dolor sit amet consectetur adipisicing elit.

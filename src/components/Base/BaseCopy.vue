@@ -7,7 +7,7 @@
 		@mouseenter="setCopyMsg"
 	>
 		<i
-			class="copy-btn cursor-pointer h-8 w-8 bg-primary flex justify-center items-center hover:bg-black hover:text-primary active:bg-white"
+			class="copy-btn cursor-pointer h-8 w-8 text-primary flex justify-center items-center hover:bg-primary hover:text-white active:bg-white active:text-primary"
 		>
 			<svg
 				class="h-5"
@@ -25,7 +25,7 @@
 			</svg>
 		</i>
 		<p
-			class="copy-text absolute -bottom-10 z-10 opacity-0 bg-primary-200 text-primary-800 pointer-events-none select-none text-xs p-2 uppercase tracking-widest"
+			class="copy-text absolute z-10 bg-primary-200 text-primary-800 pointer-events-none select-none text-xs p-2 uppercase tracking-widest"
 		>
 			{{ showMsg }}
 		</p>
@@ -83,14 +83,14 @@
 	.copy-text {
 		text-align: center;
 		min-width: max-content;
-		left: 50%;
-		transform: translate(-50%, 0);
+		right: 0%;
+		opacity: 0;
 		transition: transform 0.3s ease-out, opacity 0.15s ease-in;
 		backface-visibility: hidden;
 	}
 
 	.copy-btn:hover ~ .copy-text {
-		transform: translate(-50%, 0.5rem);
+		transform: translate(-2.5rem, 0);
 		opacity: 1;
 	}
 </style>

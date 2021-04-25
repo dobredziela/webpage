@@ -1,10 +1,10 @@
 <template>
-	<header class="header bg flex overflow-x">
+	<header class="header bg flex overflow-x gap-8">
 		<div
-			class="header-box container mx-auto px-4 sm:px-0 flex flex-col relative lg:flex-row lg:items-center md:justify-between"
+			class="header-box container mx-auto px-8 flex flex-col relative md:flex-row md:justify-between lg:items-center"
 		>
 			<div
-				class="flex flex-col items-center text-white text-center w-full lg:text-left lg:items-start"
+				class="relative z-30 flex flex-col items-center text-white text-center w-full md:text-left md:items-start"
 			>
 				<p
 					class="text-line mb-8 font-text text-primary text-sm max-w-prose uppercase tracking-widest"
@@ -12,10 +12,11 @@
 					Stowarzyszenie dla ludzi
 				</p>
 				<h1
-					class="hero-headline font-primary font-bold text-4xl leading-snug sm:text-5xl lg:text-6xl xl:text-7xl"
+					class="hero-headline font-primary font-bold leading-snug text-4xl xl:text-6xl 2xl:text-7xl mb-16 lg:mb-24"
 				>
 					Realizujemy wyłącznie
-					<span class="block mt-4 mb-24 text-underline"
+					<span
+						class="mx-auto block sm:mt-4 text-underline md:mr-0 md:ml-0"
 						>dobre dzieła!</span
 					>
 				</h1>
@@ -27,7 +28,7 @@
 			</div>
 			<img
 				src="../../assets/check.png"
-				class="header-img absolute z-20 -bottom-8 left-1/2 transform -translate-x-1/2 sm:-bottom-4 lg:transform-none lg:static lg:max-h-96 xl:max-h-full"
+				class="absolute z-20 -bottom-12 left-1/2 w-5/6 transform -translate-x-1/2 sm:-bottom-16 md:max-w-lg lg:transform-none lg:static lg:max-h-96 xl:max-w-max xl:max-h-full"
 			/>
 		</div>
 		<div
@@ -35,7 +36,7 @@
 		>
 			<img
 				src="../../assets/check-outline.svg"
-				class="check-outline absolute bottom-32 left-1/2 transform -translate-x-1/2 lg:transform-none opacity-80 lg:-bottom-12"
+				class="check-outline absolute bottom-24 left-1/2 transform -translate-x-1/2 opacity-30 md:-bottom-8 lg:transform-none lg:opacity-80 lg:bottom-16"
 			/>
 		</div>
 	</header>
@@ -53,17 +54,23 @@
 	.check-outline {
 		width: 200%;
 		max-width: unset;
-		bottom: 8vh;
-		left: -19vw;
+		bottom: 10vh;
+		left: -21vw;
 	}
 
-	@media screen and (max-width: 639px) {
+	@media screen and (max-width: 767px) {
 		.header-box {
-			margin-top: 8vh;
+			margin-top: 15vh;
 		}
 	}
 
-	@media screen and (min-width: 640px) {
+	@media screen and (max-width: 1023px) {
+		.header-box {
+			margin-top: 12vh;
+		}
+	}
+
+	@media screen and (min-width: 1024px) {
 		.check-outline {
 			width: 100vw;
 		}

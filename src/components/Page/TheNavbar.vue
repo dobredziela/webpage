@@ -1,6 +1,6 @@
 <template>
 	<nav class="py-4 absolute top-0 left-0 z-10 w-full">
-		<div class="container mx-auto">
+		<div class="container mx-auto px-8">
 			<div class="nav-logo">
 				<svg
 					class="h-8"

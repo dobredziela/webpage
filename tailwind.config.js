@@ -1,7 +1,7 @@
 const colors = require('tailwindcss/colors');
 
 module.exports = {
-	purge: [ './src/**/*.vuew' ],
+	purge: [ './src/**/*.vue', './src/**/*.js' ],
 	darkMode: 'media', // or 'media' or 'class'
 	theme: {
 		extend: {
@@ -10,7 +10,7 @@ module.exports = {
 				text: [ 'Roboto', 'sans-serif' ]
 			},
 			colors: {
-				gray: colors.trueGray,
+				gray: colors.blueGray,
 				black: 'var(--clr-black)',
 				primary: {
 					50: 'var(--clr-primary-50)',
@@ -40,8 +40,9 @@ module.exports = {
 	},
 	variants: {
 		extend: {
-			backgroundColor: [ 'active' ]
+			backgroundColor: [ 'active' ],
+			textColor: [ 'active' ]
 		}
 	},
-	plugins: [ require('tailwindcss-debug-screens') ]
+	plugins: [ require('tailwindcss-debug-screens'), require('@tailwindcss/forms') ]
 };
