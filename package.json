@@ -1,35 +1,35 @@
 {
-  "name": "d-dziela",
-  "version": "0.0.0",
-  "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "serve": "vite preview"
-  },
-  "dependencies": {
-    "lodash.throttle": "^4.1.1",
-    "stylelint": "^13.12.0",
-    "vue": "^3.0.5"
-  },
-  "devDependencies": {
-    "@tailwindcss/forms": "^0.3.2",
-    "@vitejs/plugin-vue": "^1.2.1",
-    "@vue/compiler-sfc": "^3.0.5",
-    "@vue/eslint-config-prettier": "^6.0.0",
-    "autoprefixer": "^10.2.5",
-    "babel-eslint": "^10.1.0",
-    "emailjs-com": "^2.6.4",
-    "eslint": "^7.24.0",
-    "eslint-config-prettier": "^8.2.0",
-    "eslint-plugin-prettier": "^3.4.0",
-    "eslint-plugin-vue": "^7.9.0",
-    "postcss": "^8.2.10",
-    "prettier": "^2.2.1",
-    "stylelint-config-standard": "^21.0.0",
-    "tailwindcss": "^2.1.1",
-    "tailwindcss-debug-screens": "^2.0.0",
-    "validator": "^13.6.0",
-    "vest": "^3.1.2",
-    "vite": "^2.1.5"
-  }
+	"name": "d-dziela",
+	"version": "0.0.0",
+	"scripts": {
+		"dev": "vite",
+		"build": "vite build --base=/webpage",
+		"serve": "vite preview"
+	},
+	"dependencies": {
+		"lodash.throttle": "^4.1.1",
+		"stylelint": "^13.12.0",
+		"vue": "^3.0.5"
+	},
+	"devDependencies": {
+		"@tailwindcss/forms": "^0.3.2",
+		"@vitejs/plugin-vue": "^1.2.1",
+		"@vue/compiler-sfc": "^3.0.5",
+		"@vue/eslint-config-prettier": "^6.0.0",
+		"autoprefixer": "^10.2.5",
+		"babel-eslint": "^10.1.0",
+		"emailjs-com": "^2.6.4",
+		"eslint": "^7.24.0",
+		"eslint-config-prettier": "^8.2.0",
+		"eslint-plugin-prettier": "^3.4.0",
+		"eslint-plugin-vue": "^7.9.0",
+		"postcss": "^8.2.10",
+		"prettier": "^2.2.1",
+		"stylelint-config-standard": "^21.0.0",
+		"tailwindcss": "^2.1.1",
+		"tailwindcss-debug-screens": "^2.0.0",
+		"validator": "^13.6.0",
+		"vest": "^3.1.2",
+		"vite": "^2.1.5"
+	}
 }
