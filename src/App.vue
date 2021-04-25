@@ -1,14 +1,12 @@
 <template>
-	<div class="debug-screens">
-		<the-navbar />
-		<the-hero />
-		<the-main-container>
-			<the-about-section />
-			<the-donate-section />
-			<the-contact-section />
-		</the-main-container>
-		<the-footer />
-	</div>
+	<the-navbar />
+	<the-hero />
+	<the-main-container>
+		<the-about-section />
+		<the-donate-section />
+		<the-contact-section />
+	</the-main-container>
+	<the-footer />
 </template>
 
 <script>
