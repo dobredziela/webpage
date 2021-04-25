@@ -1,5 +1,6 @@
 <template>
 	<section
+		id="donate"
 		class="container mx-auto pt-16 lg:pt-32 text-black grid grid-cols-8 gap-x-8"
 	>
 		<div class="col-span-full lg:col-span-5">

@@ -1,6 +1,9 @@
 <template>
 	<div class="bg">
-		<section class="container mx-auto py-16 lg:py-32 text-white">
+		<section
+			id="contact"
+			class="container mx-auto py-16 lg:py-32 text-white"
+		>
 			<div class="max-w-3xl mx-auto">
 				<div class="px-8">
 					<h2 class="text-4xl text-center">Bądźmy w kontakcie</h2>

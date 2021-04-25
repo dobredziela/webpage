@@ -1,5 +1,6 @@
 <template>
 	<section
+		id="about-us"
 		class="container mx-auto pt-32 px-8 text-black grid grid-cols-8 gap-x-8"
 	>
 		<h2
