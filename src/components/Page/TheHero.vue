@@ -24,7 +24,7 @@
 					href="#about-us"
 					class="button px-12 py-4 bg-primary-600 text-white text-xl font-primary font-medium hover:bg-primary-200 hover:text-primary-800"
 				>
-					Poznaj nas teraz!
+					Poznaj nas
 				</a>
 			</div>
 			<img

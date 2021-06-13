@@ -10,9 +10,7 @@
 					<p
 						class="opacity-85 mt-8 mb-16 mx-auto text-center text-lg lg:text-base"
 					>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit.
-						Quae commodi fugit sequi autem nam dolor sapiente
-						mollitia veritatis!
+				Skorzystaj z poniższego kreatora wiadomości lub skontaktuj się bezpośrednio pod adresem <strong><a href="mailto:kontakt@dobredziela.pl">kontakt@dobredziela.pl</a></strong>
 					</p>
 				</div>
 				<div class="bg-white p-8 lg:p-16 mt-8 text-black lg:shadow-2xl">
@@ -59,7 +57,7 @@
 									type="email"
 									id="user_email"
 									name="user_email"
-									placeholder="jan.doe@gmail.com"
+									placeholder="jan.kowalski@gmail.com"
 									v-model.trim="email"
 									required
 								/>
@@ -82,7 +80,7 @@
 									id="message"
 									name="message"
 									rows="4"
-									placeholder="Tutaj zostaw nam swoją wiadomość..."
+									placeholder="Wpisz swoją wiadomość..."
 									v-model="message"
 									required
 								>
@@ -92,7 +90,7 @@
 						<input
 							class="w-full sm:w-max mt-8 lg:mt-12 px-12 py-4 bg-primary-600 text-white tracking-wide font-primary font-medium hover:bg-primary-200 hover:text-primary-800 cursor-pointer"
 							type="submit"
-							value="Wyślij nam wiadomość"
+							value="Wyślij"
 						/>
 					</form>
 				</div>
@@ -147,7 +145,6 @@
 			},
 			sendEmail(e) {
 				if (!this.res.hasErrors()) {
-					alert('wysłano email!')
 					emailjs
 						.sendForm(
 							'service_2069sdl',
@@ -157,11 +154,11 @@
 						)
 						.then(
 							(result) => {
-								console.log('SUCCESS!', result.status, result.text)
-							},
+                alert('Email został wysłany.')
+              },
 							(error) => {
-								console.log('FAILED...', error)
-							}
+                alert('Błąd wysłania email. Prosimy o przesłanie treści na adres kontakt@dobredziela.pl')
+              }
 						)
 				}
 			}
